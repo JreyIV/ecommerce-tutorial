@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans", });
 
@@ -14,9 +15,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  function cn(arg0: string, variable: string): string | undefined {
-    throw new Error("Function not implemented.");
-  }
 
   return (
     <html lang="en">
